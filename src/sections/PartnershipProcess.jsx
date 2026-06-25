@@ -5,14 +5,14 @@ import { PARTNERSHIP_STEPS } from "../data/content";
 
 export default function PartnershipProcess() {
   return (
-    <Section id="partnership" className="bg-brand-50/40 py-24 sm:py-28">
+    <Section id="partnership" className="bg-brand-50/30 py-16 sm:py-20">
       <SectionHeading
         eyebrow="Global Partnership Process"
         title="How a partnership with Clarus works"
         subtitle="A clear, proven path from first conversation to long-term, scalable collaboration — wherever in the world you operate."
       />
 
-      <div className="relative mt-16">
+      <div className="relative mt-12">
         {/* Connecting line (desktop) */}
         <div className="absolute left-0 right-0 top-12 hidden h-0.5 bg-gradient-to-r from-brand-200 via-cyan-300 to-brand-200 lg:block" />
 

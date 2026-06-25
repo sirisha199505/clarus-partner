@@ -5,14 +5,14 @@ import { IT_SERVICES } from "../data/content";
 
 export default function ITServices() {
   return (
-    <Section id="it-services" className="bg-brand-50/40 py-24 sm:py-28">
+    <Section id="it-services" className="bg-brand-50/30 py-16 sm:py-20">
       <SectionHeading
         eyebrow="IT Services"
         title="Engineering that scales with you"
         subtitle="From first line of code to enterprise-wide platforms, our teams design, build, and run the technology that powers your business."
       />
 
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {IT_SERVICES.map((s, i) => (
           <Reveal key={s.title} delay={(i % 3) * 90}>
             <article className="group relative h-full overflow-hidden rounded-3xl border border-brand-100 bg-white p-7 shadow-soft transition-all duration-400 hover:-translate-y-1.5 hover:border-brand-200 hover:shadow-glow">

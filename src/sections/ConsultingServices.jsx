@@ -9,14 +9,14 @@ export default function ConsultingServices() {
     <Section
       id="consulting"
       container={false}
-      className="relative overflow-hidden bg-navy-950 py-24 text-white sm:py-28"
+      className="relative overflow-hidden bg-navy-950 py-16 text-white sm:py-20"
     >
       <div className="pointer-events-none absolute inset-0 ring-grid opacity-40" />
       <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-cyan-500/15 blur-3xl" />
       <div className="pointer-events-none absolute -left-20 bottom-0 h-96 w-96 rounded-full bg-brand-600/20 blur-3xl" />
 
       <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
           <div>
             <SectionHeading
               align="left"

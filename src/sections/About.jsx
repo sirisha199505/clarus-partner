@@ -5,8 +5,8 @@ import { ABOUT_PILLARS } from "../data/content";
 
 export default function About() {
   return (
-    <Section id="about" className="bg-white py-24 sm:py-28">
-      <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+    <Section id="about" className="bg-white/50 py-16 sm:py-20">
+      <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
         {/* Visual */}
         <Reveal className="relative order-2 lg:order-1">
           <div className="relative">
@@ -15,10 +15,10 @@ export default function About() {
               <div className="ring-grid absolute inset-0 opacity-30" />
               <div className="relative grid grid-cols-2 gap-4">
                 {[
+                  { icon: "globe", k: "Countries served", v: "28+" },
+                  { icon: "trending", k: "Client retention", v: "98%" },
                   { icon: "users", k: "Specialists", v: "450+" },
-                  { icon: "globe", k: "Delivery hubs", v: "9" },
-                  { icon: "briefcase", k: "Industries", v: "12+" },
-                  { icon: "award", k: "Awards won", v: "30+" },
+                  { icon: "award", k: "Industry awards", v: "30+" },
                 ].map((m) => (
                   <div
                     key={m.k}
@@ -27,7 +27,7 @@ export default function About() {
                     <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-cyan-500 text-white">
                       <Icon name={m.icon} size={20} />
                     </span>
-                    <p className="mt-4 font-display text-2xl font-extrabold text-white">
+                    <p className="mt-4 font-display text-2xl font-bold text-white">
                       {m.v}
                     </p>
                     <p className="text-sm text-brand-100/60">{m.k}</p>

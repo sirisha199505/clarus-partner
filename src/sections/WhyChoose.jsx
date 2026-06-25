@@ -5,14 +5,14 @@ import { WHY_CHOOSE } from "../data/content";
 
 export default function WhyChoose() {
   return (
-    <Section id="why" className="bg-white py-24 sm:py-28">
+    <Section id="why" className="bg-white/50 py-16 sm:py-20">
       <SectionHeading
         eyebrow="Why Clarus"
         title="Built to earn long-term trust"
         subtitle="Companies choose Clarus when they want a partner who is genuinely accountable for outcomes — not just a vendor who ships and leaves."
       />
 
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {WHY_CHOOSE.map((item, i) => (
           <Reveal key={item.title} delay={(i % 3) * 80}>
             <div className="group relative flex h-full gap-4 rounded-3xl border border-brand-100 bg-gradient-to-b from-white to-brand-50/30 p-6 shadow-soft transition-all duration-400 hover:-translate-y-1 hover:border-brand-200 hover:shadow-glow">

@@ -5,14 +5,14 @@ import { INDUSTRIES } from "../data/content";
 
 export default function Industries() {
   return (
-    <Section id="industries" className="bg-white py-24 sm:py-28">
+    <Section id="industries" className="bg-white/50 py-16 sm:py-20">
       <SectionHeading
         eyebrow="Industries We Serve"
         title="Deep expertise across sectors"
         subtitle="We bring domain knowledge to every engagement, so solutions fit the realities of your industry from day one."
       />
 
-      <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
         {INDUSTRIES.map((ind, i) => (
           <Reveal key={ind.name} delay={(i % 4) * 70}>
             <div className="group relative flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border border-brand-100 bg-white p-8 text-center shadow-soft transition-all duration-400 hover:-translate-y-1.5 hover:border-transparent hover:shadow-glow">

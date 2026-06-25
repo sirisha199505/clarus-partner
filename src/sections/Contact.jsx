@@ -16,7 +16,7 @@ export default function Contact() {
     <Section
       id="contact"
       container={false}
-      className="relative overflow-hidden bg-navy-950 py-24 text-white sm:py-28"
+      className="relative overflow-hidden bg-navy-950 py-16 text-white sm:py-20"
     >
       <div className="pointer-events-none absolute inset-0 ring-grid opacity-40" />
       <div className="pointer-events-none absolute -right-16 top-10 h-96 w-96 rounded-full bg-brand-600/20 blur-3xl" />
@@ -30,7 +30,7 @@ export default function Contact() {
           subtitle="Reach out directly or use the enquiry form — wherever you are, we're ready to help you take the next step."
         />
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {/* Contact methods */}
           <div className="grid gap-5 lg:col-span-1">
             {CONTACT_INFO.map((c, i) => (

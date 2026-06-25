@@ -125,15 +125,15 @@ export default function EnquiryForm() {
     `${baseControl} ${errors[name] ? errBorder : okBorder}`;
 
   return (
-    <Section id="enquiry" className="bg-white py-24 sm:py-28">
-      <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+    <Section id="enquiry" className="bg-white/50 py-16 sm:py-20">
+      <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
         {/* Left: pitch */}
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-brand-200/70 bg-brand-50/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-brand-600">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
             Enquiry Form
           </span>
-          <h2 className="mt-5 font-display text-3xl font-extrabold leading-tight text-ink sm:text-4xl">
+          <h2 className="mt-5 font-display text-3xl font-bold leading-tight text-ink sm:text-4xl">
             Tell us about your <span className="text-gradient">project</span>
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-slate-soft">
@@ -168,7 +168,7 @@ export default function EnquiryForm() {
                 <span className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-brand-500 to-cyan-500 text-white shadow-glow">
                   <Icon name="check" size={40} strokeWidth={2.4} />
                 </span>
-                <h3 className="mt-6 font-display text-2xl font-extrabold text-ink">
+                <h3 className="mt-6 font-display text-2xl font-bold text-ink">
                   Thank you, {values.contact.split(" ")[0] || "there"}!
                 </h3>
                 <p className="mt-3 max-w-sm text-slate-soft">
@@ -315,7 +315,7 @@ export default function EnquiryForm() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-brand-600 px-7 py-4 text-sm font-semibold text-white shadow-glow transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-500 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
+                    className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-brand-600 px-7 py-4 text-sm font-medium text-white shadow-glow transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-500 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
                   >
                     {submitting ? (
                       <>

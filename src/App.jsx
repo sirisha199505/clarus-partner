@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import AuroraBackground from "./components/AuroraBackground";
 
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -17,7 +18,10 @@ import Contact from "./sections/Contact";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white antialiased">
+    <div className="relative min-h-screen antialiased">
+      {/* Premium animated aurora backdrop with floating particles */}
+      <AuroraBackground />
+
       <Navbar />
       <main>
         <Hero />

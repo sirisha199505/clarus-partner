@@ -54,7 +54,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
-        <Logo />
+        <Logo light={!scrolled} />
 
         {/* Desktop links */}
         <ul className="hidden items-center gap-1 lg:flex">
@@ -64,8 +64,12 @@ export default function Navbar() {
                 href={link.href}
                 className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 ${
                   active === link.href
-                    ? "text-brand-600"
-                    : "text-ink/70 hover:text-brand-600"
+                    ? scrolled
+                      ? "text-brand-600"
+                      : "text-white"
+                    : scrolled
+                      ? "text-ink/70 hover:text-brand-600"
+                      : "text-white/75 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -91,7 +95,11 @@ export default function Navbar() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="grid h-11 w-11 place-items-center rounded-xl border border-brand-100 bg-white/70 text-ink shadow-soft backdrop-blur lg:hidden"
+          className={`grid h-11 w-11 place-items-center rounded-xl border shadow-soft backdrop-blur transition-colors duration-200 lg:hidden ${
+            scrolled || open
+              ? "border-brand-100 bg-white/70 text-ink"
+              : "border-white/25 bg-white/10 text-white"
+          }`}
         >
           <Icon name={open ? "close" : "menu"} size={22} />
         </button>

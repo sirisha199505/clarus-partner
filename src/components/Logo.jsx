@@ -17,7 +17,7 @@ export default function Logo({ light = false, className = "" }) {
         </svg>
       </span>
       <span
-        className={`font-display text-lg font-extrabold leading-none tracking-tight ${
+        className={`font-display text-lg font-semibold leading-none tracking-tight ${
           light ? "text-white" : "text-ink"
         }`}
       >

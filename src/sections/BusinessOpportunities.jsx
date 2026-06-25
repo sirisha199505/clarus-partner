@@ -6,14 +6,14 @@ import { OPPORTUNITIES } from "../data/content";
 
 export default function BusinessOpportunities() {
   return (
-    <Section id="opportunities" className="bg-brand-50/40 py-24 sm:py-28">
+    <Section id="opportunities" className="bg-brand-50/30 py-16 sm:py-20">
       <SectionHeading
         eyebrow="Business Opportunities"
         title="Let's grow together, globally"
         subtitle="We actively seek partners who share our standards. Whatever your model, there's a way to build something bigger with Clarus."
       />
 
-      <div className="mt-16 grid gap-6 md:grid-cols-2">
+      <div className="mt-12 grid gap-6 md:grid-cols-2">
         {OPPORTUNITIES.map((o, i) => (
           <Reveal key={o.title} delay={(i % 2) * 100}>
             <article className="group relative flex h-full items-start gap-5 overflow-hidden rounded-3xl border border-brand-100 bg-white p-7 shadow-soft transition-all duration-400 hover:-translate-y-1 hover:shadow-glow">
@@ -41,7 +41,7 @@ export default function BusinessOpportunities() {
         <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-brand-600 to-cyan-500 p-8 text-center shadow-glow sm:p-12">
           <div className="ring-grid absolute inset-0 opacity-20" />
           <div className="relative">
-            <h3 className="mx-auto max-w-2xl font-display text-2xl font-extrabold text-white sm:text-3xl">
+            <h3 className="mx-auto max-w-2xl font-display text-2xl font-bold text-white sm:text-3xl">
               Ready to explore a partnership opportunity?
             </h3>
             <p className="mx-auto mt-3 max-w-xl text-brand-50/90">

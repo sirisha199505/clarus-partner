@@ -15,14 +15,14 @@ export default function Testimonials() {
   }, [count]);
 
   return (
-    <Section id="testimonials" className="bg-white py-24 sm:py-28">
+    <Section id="testimonials" className="bg-white/50 py-16 sm:py-20">
       <SectionHeading
         eyebrow="Client Testimonials"
         title="Trusted by leaders who demand results"
         subtitle="Don't just take our word for it — here's what our partners say about working with Clarus."
       />
 
-      <Reveal className="mt-14">
+      <Reveal className="mt-10">
         <div className="relative mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-brand-100 bg-gradient-to-br from-navy-900 to-navy-800 p-8 shadow-glow sm:p-12">
           <div className="ring-grid absolute inset-0 opacity-30" />
           <Icon

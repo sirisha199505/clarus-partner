@@ -15,8 +15,8 @@ export const NAV_LINKS = [
 export const HERO_STATS = [
   { end: 12, suffix: "+", label: "Years of delivery" },
   { end: 320, suffix: "+", label: "Enterprise projects" },
-  { end: 28, suffix: "", label: "Countries served" },
-  { end: 98, suffix: "%", label: "Client retention" },
+  { end: 40, suffix: "+", label: "Technologies mastered" },
+  { end: 9, suffix: "", label: "Global delivery hubs" },
 ];
 
 export const TRUST_LOGOS = [

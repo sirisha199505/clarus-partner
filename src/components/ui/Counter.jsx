@@ -14,7 +14,7 @@ export default function Counter({
   const [ref, value] = useCountUp(end, { decimals });
   return (
     <div ref={ref} className={className}>
-      <div className="font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+      <div className="font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
         {prefix}
         {value}
         {suffix}

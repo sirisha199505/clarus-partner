@@ -27,7 +27,7 @@ export function SectionHeading({
       <Reveal
         as="h2"
         delay={80}
-        className={`font-display text-3xl font-extrabold leading-tight sm:text-4xl md:text-[2.6rem] ${
+        className={`font-display text-3xl font-bold leading-tight sm:text-4xl md:text-[2.6rem] ${
           light ? "text-white" : "text-ink"
         }`}
       >
@@ -53,7 +53,7 @@ export function SectionHeading({
  */
 export default function Section({ id, className = "", children, container = true }) {
   return (
-    <section id={id} className={`relative scroll-mt-24 ${className}`}>
+    <section id={id} className={`relative ${className}`}>
       {container ? (
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
           {children}
